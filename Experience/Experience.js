@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import Size from './Utils/Sizes.js';
-import Camera from './Utils/Camera.js';
+import Camera from './Camera.js';
+import Renderer from './Renderer.js';
 
 export default class Experience{
     static instance;
@@ -13,6 +14,6 @@ export default class Experience{
         this.scene = new THREE.Scene();
         this.sizes = new Size();
         this.camera = new Camera();
-        console.log(this.camera, this.sizes, this.scene, this.canvas);
+        this.renderer = new Renderer();
     }
 }
