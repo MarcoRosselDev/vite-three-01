@@ -17,5 +17,21 @@ export default class Experience{
         this.sizes = new Size();
         this.camera = new Camera();
         this.renderer = new Renderer();
+
+        this.sizes.on('resize', ()=>{
+            this.resize();
+        })
+
+        this.time.on('update', ()=>{
+            this.update();
+        })
+    }
+    resize(){
+        this.camera.resize();
+        this.renderer.resize();
+    }
+    update(){
+        this.camera.update();
+        this.renderer.update();
     }
 }
