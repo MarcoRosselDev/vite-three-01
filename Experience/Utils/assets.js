@@ -6,7 +6,7 @@ export default [
     },
     {   // future video or another intermedia material for interactur to model
         name: 'screen',
-        type: 'glbModel',
+        type: 'videoTexture',
         path: '/textures/fromGoogle.mp4'
     }
 ]
