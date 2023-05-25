@@ -26,7 +26,8 @@ export default class Camera{
             -100,
             100
         );
-        this.scene.add(this.orthographicCamera)
+        this.scene.add(this.orthographicCamera);
+        this.perspectiveCamera.position.z = 5;
     }
 
     resize(){
