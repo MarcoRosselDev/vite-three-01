@@ -2,7 +2,7 @@ export default [
     {   // model test from blender.
         name: 'room',
         type: 'glbModel',
-        path: '/models/test1.glb'
+        path: '/models/tested.glb'
     },
     {   // future video or another intermedia material for interactur to model
         name: 'screen',
