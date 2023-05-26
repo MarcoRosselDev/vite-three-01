@@ -33,7 +33,9 @@ export default class Camera{
             100
         );
         this.scene.add(this.orthographicCamera);
-        this.perspectiveCamera.position.z = 5;
+        this.perspectiveCamera.position.z = 4.45;
+        this.perspectiveCamera.position.x = 3.67;
+        this.perspectiveCamera.position.y = 4.75;
     }
 
     resize(){
