@@ -1,5 +1,5 @@
 import { Edges } from "@react-three/drei";
-import { Side } from "./Side";
+import {Side}  from "./Side.jsx";
 
 export function Box_mesh() {
   return (

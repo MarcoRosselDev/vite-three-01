@@ -2,7 +2,7 @@ import { Environment, MeshPortalMaterial, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 
-export function Side({ rotation = [0, 0, 0], bg = '#ffffff', children, index }:{rotation :Array<number>, bg:string, children:any, index: number}) {
+export function Side({ rotation = [0, 0, 0], bg = '#ffffff', children, index }) {
   const mesh = useRef()
   const { nodes } = useGLTF('./model/aobox-transformed.glb')
   useFrame((state, delta) => {
