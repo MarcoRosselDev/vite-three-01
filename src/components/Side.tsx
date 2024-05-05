@@ -20,7 +20,7 @@ export function Side({ rotation = [0, 0, 0], bg = '#ffffff', children, index }:{
       {/** The shape */}
       <mesh castShadow receiveShadow ref={mesh}>
         {children}
-        <meshLambertMaterial color={bg} />
+        <meshLambertMaterial color={bg}/>
       </mesh>
     </MeshPortalMaterial>
   )

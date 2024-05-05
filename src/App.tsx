@@ -9,7 +9,7 @@ function App() {
 
   return (
     <main className={`main-${tema? 'dark': 'light'}`}>
-      <button className='style' onClick={()=> setTema(prev => !prev)}>logo</button>
+      <button className='style' onClick={()=> setTema(prev => !prev)}>{tema? 'light mode': 'dark mode'}</button>
       <Main_canvas />
     </main>
   )
